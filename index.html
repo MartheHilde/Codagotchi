@@ -1,0 +1,74 @@
+<!--
+    This app was created by following a course from BOOLEAN UK's free coding week.
+    The app uses an API for voice recognition/interpretation for Chrome. 
+    
+    Have fun while Kanna is dancing, eating and sleeping =)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigotchi with Kanna</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Stylesheet and script -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <img src="img/logo.png">
+        </header>
+        <!-- Main section of app -->
+        <main>
+
+                <!-- Kannagotchi -->
+                <section class="codigotchi">
+                    <img src="img/codigotchi.png">
+                    <div id="screen" class="codigotchi-screen">
+
+                    </div>
+                </section>
+                <!-- Controls -->
+                <section id="panels-data" class="panels">
+
+                    <!--Microphone-->
+                    <div class="panel panel-microphone">
+                        <button id="microphone">
+                            <img src="/img/mic.png">
+                        </button>
+                        <h2>Activate Microphone</h2>
+                    </div>
+
+                    <!-- Voice controls -->
+                    <div class="panel panel-commands">
+                        <h2>Speak a command!</h2>
+                        <h3>Supported Commands</h3>
+                        
+                        <div class="commands">
+                            <ul>
+                                <li>Eat</li>
+                                <li>Dance</li>
+                                <li>Sleep</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <p id="transcript"></p>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
